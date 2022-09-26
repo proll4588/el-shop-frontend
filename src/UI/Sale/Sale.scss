@@ -1,0 +1,39 @@
+.Sale {
+  padding-left: 10px;
+
+  &__body {
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__order-input {
+    height: 25px;
+    border-radius: 13px;
+    padding-left: 7px;
+    border: 2px solid black;
+    margin-right: 5px;
+  }
+
+  &__btn {
+    width: 150px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    &:disabled {
+      background-color: grey;
+      cursor: initial;
+    }
+  }
+}

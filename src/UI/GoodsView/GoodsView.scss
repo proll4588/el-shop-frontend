@@ -1,0 +1,13 @@
+.GoodsView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  background-color: rgba(white, 0);
+
+  padding-right: 215px;
+
+  &__GoodsCard {
+    margin: 10px;
+  }
+}

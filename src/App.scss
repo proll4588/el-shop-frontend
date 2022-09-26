@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import './style-var';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+ }
+
+ul {
+  list-style-type: none;
+}
+
+.App {
+  position: relative;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 80px);
+  left: 80px;
+  min-height: 100vh;
+  //background: rgb(174,224,238);
+  //background: radial-gradient(circle, rgba(174,224,238,1) 0%, rgba(255,255,255,1) 90%);
+
+  transition: 0.5s;
+
+  &_mini {
+    width: calc(100% - 300px);
+    left: 300px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+

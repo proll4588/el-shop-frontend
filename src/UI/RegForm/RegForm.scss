@@ -1,0 +1,113 @@
+@import '../../style-var';
+
+.RegForm {
+  width: 300px;
+  height: 330px;
+
+  background: white;
+
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+
+  &__container {
+    width: 280px;
+
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  &__head {
+    //color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+
+  &__inputs {
+    width: 250px;
+
+    margin: 0 auto;
+  }
+
+  &__input {
+    height: 40px;
+    width: 100%;
+
+    border: 2px solid $blue;
+    border-radius: 20px;
+
+    padding: 5px 20px;
+    padding-left: 35px;
+    margin-bottom: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: 0.5s;
+  }
+
+  &__input:hover, &__input:focus {
+    border-color: #ee9b00;
+  }
+
+  &__input-box {
+    position: relative;
+
+    ion-icon {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+
+      font-size: 1.5em;
+    }
+  }
+
+
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    padding: 10px;
+
+    border-radius: 20px;
+    border: 2px solid $blue;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.5s;
+
+    text-decoration: none;
+    color: black;
+  }
+
+  &__btn:nth-child(1) {
+    border-color: $blue;
+    background: $blue;
+    color: white;
+  }
+
+  &__btn:nth-child(1):hover {
+    border-color: $blue;
+    background: white;
+    color: black;
+  }
+
+  &__btn:nth-child(2) {
+    border-color: #94d2bd;
+  }
+
+  &__btn:nth-child(2):hover {
+    background: #94d2bd;
+    color: white;
+  }
+}

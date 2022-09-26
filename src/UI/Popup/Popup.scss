@@ -1,0 +1,108 @@
+.Popup {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  z-index: 1000;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(grey, 0.5);
+
+  &__container {
+    position: relative;
+
+    width: 650px;
+    height: 400px;
+
+    margin: 100px auto;
+
+    background: white;
+
+    border-radius: 20px;
+  }
+
+  &__content {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__img {
+    max-width: 325px;
+    max-height: 380px;
+
+    object-position: center;
+    object-fit: contain;
+  }
+
+  &__dis {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__btn-close {
+    position: absolute;
+
+    right: -20px;
+    top: -20px;
+
+    width: 35px;
+    height: 35px;
+
+    text-align: center;
+
+    border: 0;
+
+    background: rgba(white, 1);
+    border-radius: 20px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    ion-icon {
+      color: black;
+    }
+  }
+
+  &__num {
+    flex: 0 0 10px;
+  }
+
+  &__addToCart {
+    background: white;
+    border: 2px solid limegreen;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+
+    ion-icon {
+      color: limegreen;
+    }
+  }
+
+  &__addToCart:disabled {
+    border-color: grey;
+    cursor: auto;
+    ion-icon {
+      color: grey;
+    }
+  }
+
+  &__trans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 50px;
+  }
+}

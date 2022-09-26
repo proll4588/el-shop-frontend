@@ -1,0 +1,100 @@
+@import "../../style-var";
+
+.GoodsCard {
+  position: relative;
+  background: white;
+
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  border: 1px solid white;
+
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 7px 25px rgba(0,0,0,0.3);
+
+  }
+
+  &__container {
+    padding: 10px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__photo {
+    height: 175px;
+    object-position: center;
+    object-fit: contain;
+
+    cursor: pointer;
+  }
+
+  &__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    cursor: pointer;
+  }
+
+  &__info-up {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn-add-to-cart {
+    position: absolute;
+
+    right: 0px;
+    top: 0px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: 2px solid $blue;
+
+    background: white;
+
+    cursor: pointer;
+
+
+    transition: background-color 0.5s;
+  }
+
+  &__btn-add-to-cart:hover {
+    border-color: white;
+    background: #ee9b00;
+  }
+
+  &__btn-add-to-cart:disabled {
+    border-color: grey;
+    cursor: default;
+  }
+
+  ion-icon {
+    font-size: 1.75em;
+    transition: color 0.3s;
+    color: $blue;
+  }
+
+  &__btn-add-to-cart:hover ion-icon {
+    color: white;
+  }
+  &__btn-add-to-cart:disabled ion-icon {
+    color: grey;
+  }
+
+  &__btn-add-to-cart:disabled:hover {
+    background-color: white;
+  }
+}

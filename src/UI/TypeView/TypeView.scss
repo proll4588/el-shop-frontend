@@ -1,0 +1,11 @@
+.TypeView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  background-color: rgba(white, 0);
+
+  &__TypeCard {
+    margin: 10px;
+  }
+}

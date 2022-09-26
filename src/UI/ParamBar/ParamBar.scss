@@ -1,0 +1,39 @@
+.ParamBar {
+  position: absolute;
+
+  right: 10px;
+
+  width: 200px;
+  height: 100%;
+
+  &__container {
+    width: 100%;
+
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+  }
+
+  &__content {
+    padding: 10px;
+  }
+
+  &__cost {
+    margin-bottom: 20px;
+  }
+
+  &__cost-name {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__input {
+    width: 70px;
+    height: 25px;
+  }
+
+}

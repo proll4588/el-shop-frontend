@@ -1,0 +1,33 @@
+.Admin {
+  padding-bottom: 200px;
+  &__charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 415px;
+    padding-left: 20px;
+  }
+
+  canvas {
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    padding-right: 20px;
+  }
+
+  &__head {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__add {
+    margin-top: 30px;
+  }
+
+  &__orders-table {
+    margin: 30px 10px 0 10px;
+
+  }
+}

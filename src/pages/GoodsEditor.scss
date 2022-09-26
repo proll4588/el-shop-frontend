@@ -1,0 +1,95 @@
+.GoodsEditor {
+  &__container {
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    padding: 10px;
+  }
+
+  &__head {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__inputs-type {
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+
+    display: inline-flex;
+    flex-direction: column;
+
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__input-container {
+    display: inline-flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  &__param-container{
+    display: inline-flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    margin-left: 5px;
+  }
+
+  &__input {
+    height: 25px;
+    border-radius: 13px;
+    padding-left: 7px;
+    border: 2px solid black;
+  }
+
+  &__param-input {
+    height: 25px;
+    border-radius: 13px;
+    padding-left: 7px;
+    border: 2px solid black;
+  }
+
+  &__inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__param-inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__addToDataBase {
+    height: 30px;
+    padding: 5px 10px;
+    border:none;
+    background: darkgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+.ParamCost {
+  &__cost-name {
+    text-align: center;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 10px 0;
+  }
+  &__input {
+    width: 80px;
+    height: 25px;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    padding: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input-cost-min {}
+  &__input-cost-max {}
+  & {}
+}
